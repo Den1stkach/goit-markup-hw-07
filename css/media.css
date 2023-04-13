@@ -1,0 +1,28 @@
+@media screen and (min-width: 428px) {
+  .container {
+    width: 428px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 736px;
+  }
+  .mobile-menu-open {
+    display: none;
+  }
+  .menu-nav {
+    display: block;
+  }
+  .address-list {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1158px;
+  }
+}
