@@ -42,7 +42,7 @@
             </li>
           </ul>
         </nav>
-        <button class="mobile-menu-open" type="button">
+        <button class="mobile-menu-open" data-menu-open type="button">
           <svg class="mobile-menu-open-icon" width="32" height="22">
             <use href="./images/icons.svg#icon-menu-burger"></use>
           </svg>
@@ -63,21 +63,93 @@
           </ul>
         </address>
       </div>
+      <div class="mobile-menu is-hidden" data-menu>
+        <div class="container mobile-menu-container">
+          <button
+            class="mobile-menu-close-button"
+            data-menu-close
+            type="button"
+          >
+            <svg class="mobile-menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="./index.html">Studio</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div class="container address-container">
+          <ul class="mob-menu-address list">
+            <li class="mob-menu-address-link">
+              <a class="mob-menu-tel-link link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mob-menu-address-mail-link">
+              <a
+                class="mob-menu-mail-link link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mob-menu-soc-list list">
+            <li class="mob-menu-soc-item">
+              <a class="mob-menu-soc-link link" href="">
+                <svg class="mob-menu-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-menu-soc-item">
+              <a class="mob-menu-soc-link link" href="">
+                <svg class="mob-menu-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-menu-soc-item">
+              <a class="mob-menu-soc-link link" href="">
+                <svg class="mob-menu-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-menu-soc-item">
+              <a class="mob-menu-soc-link link" href="">
+                <svg class="mob-menu-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
 
-    <!-- <main> -->
-    <!-- hero -->
-    <!-- <section class="hero">
+    <main>
+      <!-- hero -->
+      <section class="hero">
         <div class="container">
           <h1 class="hero-logo">Effective Solutions for Your Business</h1>
           <button class="hero-button" type="button" data-modal-open>
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
 
-    <!-- section 1 -->
-    <!-- <section class="about-us">
+      <!-- section 1 -->
+      <section class="about-us">
         <div class="container first-section-container">
           <h2 hidden class="section-title">About us</h2>
           <ul class="main list">
@@ -135,9 +207,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
-    <!-- section 2 -->
-    <!-- <section class="resourses">
+      </section>
+      <!-- section 2 -->
+      <section class="resourses">
         <div class="container">
           <h2 class="subtitle-section">What are we doing</h2>
 
@@ -171,22 +243,25 @@
             </li>
           </ul>
         </div>
-      </section> -->
-    <!-- section 3 -->
+      </section>
+      <!-- section 3 -->
 
-    <!-- <section class="team-section">
+      <section class="team-section">
         <div class="container">
           <h2 class="subject">Our Team</h2>
 
           <ul class="team list">
             <li class="team-picture">
-              <img
-                class="team-pct"
-                src="./images/teamcard1.jpg"
-                alt="Team Card 1"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source srcset="./images3/mark-guerrero@2x.jpg 2x" />
+                <img
+                  class="team-pct"
+                  src="./images3/mark-guerrero.jpg"
+                  alt="Team Card 1"
+                  width="264"
+                  height="260"
+                />
+              </picture>
               <div class="name-table">
                 <h3 class="name">Mark Guerrero</h3>
                 <p class="profession">Product Designer</p>
@@ -223,13 +298,16 @@
               </div>
             </li>
             <li class="team-picture">
-              <img
-                class="team-pct"
-                src="./images/teamcard2.jpg"
-                alt="Team Card 2"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source srcset="./images3/tom-ford@2x.jpg 2x" />
+                <img
+                  class="team-pct"
+                  src="./images3/tom-ford.jpg"
+                  alt="Team Card 2"
+                  width="264"
+                  height="260"
+                />
+              </picture>
               <div class="name-table">
                 <h3 class="name">Tom Ford</h3>
                 <p class="profession">Frontend Developer</p>
@@ -266,13 +344,16 @@
               </div>
             </li>
             <li class="team-picture">
-              <img
-                class="team-pct"
-                src="./images/teamcard3.jpg"
-                alt="Team Card 3"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source srcset="./images3/camila-garcia@2x.jpg 2x" />
+                <img
+                  class="team-pct"
+                  src="./images3/camila-garcia.jpg"
+                  alt="Team Card 3"
+                  width="264"
+                  height="260"
+                />
+              </picture>
               <div class="name-table">
                 <h3 class="name">Camila Garcia</h3>
                 <p class="profession">Marketing</p>
@@ -309,13 +390,16 @@
               </div>
             </li>
             <li class="team-picture">
-              <img
-                class="team-pct"
-                src="./images/teamcard4.jpg"
-                alt="Team Card 4"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source srcset="./images3/daniel-wilson@2x.jpg 2x" />
+                <img
+                  class="team-pct"
+                  src="./images3/daniel-wilson.jpg"
+                  alt="Team Card 4"
+                  width="264"
+                  height="260"
+                />
+              </picture>
               <div class="name-table">
                 <h3 class="name">Daniel Wilson</h3>
                 <p class="profession">UI Designer</p>
@@ -353,8 +437,8 @@
             </li>
           </ul>
         </div>
-      </section> -->
-    <!-- <section class="customers">
+      </section>
+      <section class="customers">
         <div class="container customers-container">
           <h2 class="customers-title">Customers</h2>
           <ul class="customers-list list">
@@ -403,9 +487,9 @@
           </ul>
         </div>
       </section>
-    </main> -->
+    </main>
 
-    <!-- <footer class="footer-box">
+    <footer class="footer-box">
       <div class="container footer-soc-icon-container">
         <div class="footer-container">
           <a class="footer-logo link" href="./index.html"
@@ -449,25 +533,25 @@
             </li>
           </ul>
         </div>
-
-        <div class="foot-input">
+        <form class="foot-form">
           <p class="foot-subscribe">Subscribe</p>
-
-          <form class="foot-form">
+          <div class="foot-input">
             <input
               class="foot-input-mail"
               type="email"
               placeholder="E-mail"
               name="email"
+              autocomplete="on"
             />
+
             <button class="btn-subscribe" type="submit">
               Subscribe
               <svg class="sub-svg" width="24" height="20">
                 <use href="./images/icons.svg#icon-Frame-3"></use>
               </svg>
             </button>
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -554,8 +638,9 @@
           <button type="submit" class="modal-submit">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

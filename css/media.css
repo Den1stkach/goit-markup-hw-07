@@ -1,28 +1,205 @@
+/* mobile */
+
 @media screen and (min-width: 428px) {
   .container {
-    width: 428px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 428px;
   }
 }
 
+@media screen and (max-width: 767px) {
+  .footer-soc-icon-container {
+    gap: 72px;
+  }
+  .footer-logo {
+    display: block;
+    text-align: center;
+  }
+}
+@media (min-device-pixel-ratio: 2) and (max-width: 767px),
+  (min-resolution: 192dpi) and (max-width: 767px),
+  (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero {
+    background-color: var(--color-grey);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images3/hero-image-mob@2x.jpg);
+  }
+}
+/* tablet */
+
 @media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images3/hero-image-tablet.jpg);
+  }
+  .header-main {
+    padding: 0;
+  }
   .container {
-    width: 736px;
+    max-width: 768px;
+  }
+  .header-container {
+    display: flex;
+
+    align-items: center;
   }
   .mobile-menu-open {
     display: none;
   }
   .menu-nav {
     display: block;
+    display: flex;
+    align-items: center;
+  }
+  .header-nav {
+    display: flex;
+    align-items: center;
+  }
+  .header-address {
+    display: flex;
   }
   .address-list {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    padding-top: 7px;
+  }
+  .title-list {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .main {
+    gap: 72px 24px;
+  }
+  .main-title {
+    text-align: left;
+  }
+  .customers-item {
+    width: calc((100% - 48px) / 3);
+  }
+  .customers-container,
+  .footer-soc-icon-container {
+    max-width: 552px;
+  }
+  .footer-container {
+    max-width: 264px;
+    margin-left: 0;
+    margin-bottom: 72px;
+  }
+  .soc-title,
+  .foot-subscribe {
+    text-align: left;
+  }
+  .footer-soc-icon-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  .foot-input {
+    display: flex;
+    width: 453px;
   }
 }
 
+@media (min-device-pixel-ratio: 2) and (min-width: 768px),
+  (min-resolution: 192dpi) and (min-width: 768px),
+  (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images3/hero-image-tablet@2x.jpg);
+  }
+}
+/* desctop */
 @media screen and (min-width: 1158px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images3/hero-image-desk.jpg);
+  }
   .container {
-    width: 1158px;
+    max-width: 1158px;
+    padding-top: 24px;
+    padding-bottom: 22px;
+  }
+
+  .address-list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 0;
+  }
+  .feature-container {
+    display: flex;
+    justify-content: center;
+    height: 112px;
+    align-items: center;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    background-color: var(--color-cloud);
+  }
+  .title-list {
+    width: calc((100% - 72px) / 4);
+  }
+  .main-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--color-navy-blue);
+    letter-spacing: 0.02em;
+  }
+  .subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-slate);
+    max-width: 264px;
+  }
+  .team {
+    gap: 24px;
+  }
+
+  @media (min-device-pixel-ratio: 2) and (min-width: 1158px),
+    (min-resolution: 192dpi) and (min-width: 1158px),
+    (min-resolution: 2dppx) and (min-width: 1158px) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images3/hero-image-desk@2x.jpg);
+    }
+  }
+  .customers-container {
+    max-width: 1158px;
+  }
+  .customers-item {
+    width: calc((100% - 120px) / 6);
+  }
+  .footer-soc-icon-container {
+    flex-wrap: nowrap;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .footer-soc-med {
+    margin-right: 80px;
+  }
+  .resourses {
+    display: block;
+    padding-top: 0;
+    padding-bottom: 120px;
+  }
+  .footer-box {
+    padding-bottom: 0;
   }
 }
