@@ -37,8 +37,30 @@
       ),
       url(../images3/hero-image-tablet.jpg);
   }
+  .current::after {
+    background-color: #404bbf;
+  }
+  .project-card {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+  .project-card-list {
+    width: calc((100% - 24px) / 2);
+  }
+  .filters-btn {
+    justify-content: center;
+    margin-bottom: 64px;
+  }
+  .portfolio-section {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
   .header-main {
     padding: 0;
+  }
+  .team {
+    gap: 72px 24px;
   }
   .container {
     max-width: 768px;
@@ -104,6 +126,9 @@
     display: flex;
     width: 453px;
   }
+  .fil-btn {
+    padding: 12px 24px;
+  }
 }
 
 @media (min-device-pixel-ratio: 2) and (min-width: 768px),
@@ -128,10 +153,21 @@
   }
   .container {
     max-width: 1158px;
-    padding-top: 24px;
-    padding-bottom: 22px;
   }
 
+  .filters-btn {
+    margin-bottom: 72px;
+  }
+  .project-card {
+    gap: 48px 24px;
+  }
+  .portfolio-section {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+  .project-card-list {
+    width: calc((100% - 48px) / 3);
+  }
   .address-list {
     display: flex;
     flex-direction: row;
@@ -178,7 +214,14 @@
           rgba(46, 47, 66, 0.7)
         ),
         url(../images3/hero-image-desk@2x.jpg);
+      width: 1440px;
+      margin-left: auto;
+      margin-right: auto;
     }
+  }
+  .hero-logo {
+    max-width: 496px;
+    font-size: 56px;
   }
   .customers-container {
     max-width: 1158px;
@@ -201,5 +244,35 @@
   }
   .footer-box {
     padding-bottom: 0;
+  }
+  .current::after {
+    top: 43px;
+  }
+  .head-mail {
+    font-size: 16px;
+  }
+  .header-container {
+    padding-top: 24px;
+    padding-bottom: 22px;
+  }
+  .about-us {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .team-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .footer-container {
+    margin-bottom: 0;
+    padding-bottom: 100px;
+  }
+  .modal {
+    width: 408px;
   }
 }
